@@ -5,11 +5,11 @@ const Navbar = (props) => {
     <div className="navbar">
       <h1 className="brand">De_Be_Beer</h1>
       <div className="navbar-links">
-        <a href="#" className="navbar-link">
+        <a href="/" className="navbar-link">
           Home
         </a>
-        <a href="#" className="navbar-link">
-          Products
+        <a href="/products" className="navbar-link">
+          Productos
         </a>
       </div>
     </div>
