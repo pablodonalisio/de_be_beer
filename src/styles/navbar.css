@@ -1,0 +1,29 @@
+.navbar {
+  width: 100vw;
+  height: 70px;
+  background-color: rgb(250, 204, 53);
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  margin-right: 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(92, 10, 10);
+  margin: 0 5px;
+}
+
+.navbar-link:hover {
+  color: rgb(143, 56, 56);
+}
