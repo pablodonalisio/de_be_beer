@@ -1,7 +1,8 @@
 .navbar {
   width: 100vw;
   height: 70px;
-  background-color: rgb(250, 204, 53);
+  /* background-color: rgb(253, 166, 5); */
+  // background-image: linear-gradient(to bottom right, $primary, $secondary);
   padding: 10px 15px;
   display: flex;
   align-items: center;
@@ -11,6 +12,7 @@
 .brand {
   font-size: 2rem;
   font-weight: bold;
+  color: white;
 }
 
 .navbar-links {
@@ -21,7 +23,7 @@
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
-  color: rgb(92, 10, 10);
+  color: white;
   margin: 0 5px;
 }
 

@@ -1,0 +1,18 @@
+.sticker {
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.sticker-image {
+  width: 60%;
+  height: auto;
+}
+
+.sticker-text {
+  background-size: cover;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
