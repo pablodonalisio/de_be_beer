@@ -4,7 +4,7 @@ export const ProductData = [
     name: "Cerveza IPA",
     brand: "Andes",
     image:
-      "https://gamadistribuidora.com.ar/301-thickbox_default/andes-origen-ipa-ret-x12-1000.jpg",
+      "https://hudson.grupoelnene.com.ar/6866-home_default/cerveza-andes-origen-ipa-lt.jpg",
     price: "240,00",
   },
   {

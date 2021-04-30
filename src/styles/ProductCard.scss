@@ -1,0 +1,44 @@
+.container-card {
+  width: 200px;
+  padding: 10px;
+  background-color: $bg-color;
+  color: white;
+  border-radius: 5%;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-footer {
+    line-height: 1.5rem;
+    display: flex;
+    margin: 5px;
+
+    .product-description {
+      flex: 3;
+    }
+
+    .quantity-box {
+      flex: 1;
+      text-align: center;
+      border-radius: 5%;
+      border: solid 0.1px;
+
+      input {
+        width: 50px;
+        height: 50%;
+        font-size: 1.2rem;
+        border: none;
+      }
+
+      button {
+        width: 50px;
+        height: 50%;
+        font-size: 1rem;
+        background-color: $terciary;
+        border: none;
+      }
+    }
+  }
+}
