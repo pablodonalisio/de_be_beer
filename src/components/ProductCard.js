@@ -13,7 +13,7 @@ const ProductCard = (props) => {
           <p>Price: ${product.price}</p>
         </div>
         <div className="quantity-box">
-          <input type="number" min="1"></input>
+          <input type="number" min="1" defaultValue="1"></input>
           <button>Add</button>
         </div>
       </div>
