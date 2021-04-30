@@ -3,6 +3,7 @@
   width: 80%;
   display: flex;
   align-items: center;
+  background-color: $bg-color;
 }
 
 .sticker-image {
@@ -13,6 +14,7 @@
 .sticker-text {
   background-size: cover;
   color: white;
-  font-size: 2rem;
+  font-size: 3vw;
   text-align: center;
+  padding: 2vw;
 }

@@ -1,12 +1,11 @@
 .navbar {
   width: 100vw;
   height: 70px;
-  /* background-color: rgb(253, 166, 5); */
-  // background-image: linear-gradient(to bottom right, $primary, $secondary);
   padding: 10px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-shadow: 0px 3px 20px 0px $bg-color;
 }
 
 .brand {
