@@ -1,7 +1,12 @@
-.products-container {
+.container {
   display: flex;
-  margin: 50px 50px 0;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: 60%;
+  justify-content: space-between;
+
+  .products-container {
+    display: flex;
+    margin: 50px 50px 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 60%;
+  }
 }
