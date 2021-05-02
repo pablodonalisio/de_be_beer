@@ -8,7 +8,17 @@ const Products = () => {
 
   const addProduct = (product, quantity) => {
     product.quantity = quantity;
-    setCartProducts([...cartProducts, product]);
+    if (cartProducts.filter((p) => p.itemID === product.itemID).length === 0)
+      setCartProducts([...cartProducts, product]);
+    else
+      setCartProducts(
+        cartProducts.map((p) => {
+          if (p.itemID === product.itemID) {
+            p.quantity = quantity;
+          }
+          return p;
+        })
+      );
   };
 
   return (
