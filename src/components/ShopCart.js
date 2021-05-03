@@ -7,16 +7,18 @@ const ShopCart = (props) => {
   const [cartProducts, setCartProducts] = useState([]);
   const [total, setTotal] = useState(0);
 
+  const { products, removeProduct } = props;
+
   useEffect(() => {
     setCartProducts(
-      props.cartProducts.map((product) => {
+      products.map((product) => {
         return (
           <div key={product.itemID} className="content">
             <p>
               {product.name}(x{product.quantity})
               <button
                 type="button"
-                onClick={() => props.removeProduct(product)}
+                onClick={() => removeProduct(product)}
                 className="delete-button"
               >
                 <FontAwesomeIcon icon={faTrashAlt} />
@@ -27,17 +29,17 @@ const ShopCart = (props) => {
         );
       })
     );
-  }, [props.cartProducts]);
+  }, [products, removeProduct]);
 
   useEffect(() => {
     setTotal(
-      props.cartProducts.reduce((total, product) => {
+      products.reduce((total, product) => {
         console.log(product.quantity);
         return (total =
           total + parseInt(product.price) * parseInt(product.quantity));
       }, 0)
     );
-  }, [props.cartProducts]);
+  }, [products]);
 
   return (
     <div className="cart">

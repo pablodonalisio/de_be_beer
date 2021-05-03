@@ -38,7 +38,7 @@ const Products = () => {
           );
         })}
       </div>
-      <ShopCart cartProducts={cartProducts} removeProduct={removeProduct} />
+      <ShopCart products={cartProducts} removeProduct={removeProduct} />
     </div>
   );
 };
