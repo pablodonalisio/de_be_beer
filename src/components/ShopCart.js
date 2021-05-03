@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import { faDollarSign } from "@fortawesome/free-solid-svg-icons";
 
 const ShopCart = (props) => {
   const [cartProducts, setCartProducts] = useState([]);
@@ -10,7 +13,14 @@ const ShopCart = (props) => {
         return (
           <div key={product.itemID} className="content">
             <p>
-              Item: {product.name}(x{product.quantity})
+              {product.name}(x{product.quantity})
+              <button
+                type="button"
+                onClick={() => props.removeProduct(product)}
+                className="delete-button"
+              >
+                <FontAwesomeIcon icon={faTrashAlt} />
+              </button>
             </p>
             <p>${product.price}</p>
           </div>
@@ -51,6 +61,9 @@ const ShopCart = (props) => {
           <p>${total.toString()}</p>
         </div>
       </div>
+      <button type="button" className="pagar">
+        <FontAwesomeIcon icon={faDollarSign} />
+      </button>
     </div>
   );
 };

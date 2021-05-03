@@ -25,6 +25,31 @@
     .content {
       display: flex;
       justify-content: space-between;
+
+      .delete-button {
+        background-color: white;
+        border: none;
+        margin-left: 5px;
+        color: grey;
+      }
+
+      .delete-button:hover {
+        color: rgb(189, 178, 178);
+      }
+
+      .delete-button:focus {
+        outline: none;
+      }
     }
+  }
+
+  .pagar {
+    margin-top: 15px;
+    width: 50px;
+    height: 30px;
+    font-size: 1rem;
+    background-color: $terciary;
+    border: none;
+    border-radius: 5px;
   }
 }

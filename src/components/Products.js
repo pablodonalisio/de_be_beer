@@ -21,6 +21,10 @@ const Products = () => {
       );
   };
 
+  const removeProduct = (product) => {
+    setCartProducts(cartProducts.filter((p) => product.itemID !== p.itemID));
+  };
+
   return (
     <div className="container">
       <div className="products-container">
@@ -34,7 +38,7 @@ const Products = () => {
           );
         })}
       </div>
-      <ShopCart cartProducts={cartProducts} />
+      <ShopCart cartProducts={cartProducts} removeProduct={removeProduct} />
     </div>
   );
 };
