@@ -14,7 +14,7 @@ const ProductCard = (props) => {
         <div className="product-description">
           <p>{product.name}</p>
           <p>{product.brand}</p>
-          <p>Price: ${product.price}</p>
+          <p>Precio: ${product.price}</p>
         </div>
         <div className="quantity-box">
           <input
